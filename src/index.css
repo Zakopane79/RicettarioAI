@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default Theme - Modern Blue */
+  --bg: 248 250 252;
+  --fg: 15 23 42;
+  --primary: 59 130 246;
+  --primary-text: 255 255 255;
+  --secondary: 100 116 139;
+  --secondary-text: 255 255 255;
+  --card: 255 255 255;
+  --card-text: 15 23 42;
+  --muted: 241 245 249;
+  --muted-text: 100 116 139;
+  --accent: 168 85 247;
+  --accent-text: 255 255 255;
+  --border: 226 232 240;
+  --input: 255 255 255;
+  --ring: 59 130 246;
+  --success: 34 197 94;
+  --warning: 251 191 36;
+  --danger: 239 68 68;
+  --glow: 59 130 246;
+}
+
+[data-theme="dark"] {
+  --bg: 15 23 42;
+  --fg: 248 250 252;
+  --primary: 59 130 246;
+  --primary-text: 255 255 255;
+  --secondary: 71 85 105;
+  --secondary-text: 255 255 255;
+  --card: 30 41 59;
+  --card-text: 248 250 252;
+  --muted: 51 65 85;
+  --muted-text: 148 163 184;
+  --accent: 168 85 247;
+  --accent-text: 255 255 255;
+  --border: 51 65 85;
+  --input: 30 41 59;
+  --ring: 59 130 246;
+  --success: 34 197 94;
+  --warning: 251 191 36;
+  --danger: 239 68 68;
+  --glow: 59 130 246;
+}
+
+[data-theme="emerald"] {
+  --bg: 247 254 231;
+  --fg: 20 83 45;
+  --primary: 16 185 129;
+  --primary-text: 255 255 255;
+  --secondary: 6 95 70;
+  --secondary-text: 255 255 255;
+  --card: 255 255 255;
+  --card-text: 20 83 45;
+  --muted: 236 253 245;
+  --muted-text: 101 163 13;
+  --accent: 245 101 101;
+  --accent-text: 255 255 255;
+  --border: 187 247 208;
+  --input: 255 255 255;
+  --ring: 16 185 129;
+  --success: 34 197 94;
+  --warning: 251 191 36;
+  --danger: 239 68 68;
+  --glow: 16 185 129;
+}
+
+[data-theme="sunset"] {
+  --bg: 255 251 235;
+  --fg: 120 53 15;
+  --primary: 251 146 60;
+  --primary-text: 255 255 255;
+  --secondary: 194 65 12;
+  --secondary-text: 255 255 255;
+  --card: 255 255 255;
+  --card-text: 120 53 15;
+  --muted: 254 243 199;
+  --muted-text: 180 83 9;
+  --accent: 236 72 153;
+  --accent-text: 255 255 255;
+  --border: 253 230 138;
+  --input: 255 255 255;
+  --ring: 251 146 60;
+  --success: 34 197 94;
+  --warning: 251 191 36;
+  --danger: 239 68 68;
+  --glow: 251 146 60;
+}
+
+.bg-custom { background-color: rgb(var(--bg)); }
+.text-custom { color: rgb(var(--fg)); }
+.bg-primary { background-color: rgb(var(--primary)); }
+.text-primary { color: rgb(var(--primary)); }
+.text-primary-text { color: rgb(var(--primary-text)); }
+.bg-secondary { background-color: rgb(var(--secondary)); }
+.text-secondary { color: rgb(var(--secondary)); }
+.text-secondary-text { color: rgb(var(--secondary-text)); }
+.bg-card { background-color: rgb(var(--card)); }
+.text-card { color: rgb(var(--card-text)); }
+.bg-muted { background-color: rgb(var(--muted)); }
+.text-muted { color: rgb(var(--muted-text)); }
+.bg-accent { background-color: rgb(var(--accent)); }
+.text-accent { color: rgb(var(--accent)); }
+.text-accent-text { color: rgb(var(--accent-text)); }
+.border-custom { border-color: rgb(var(--border)); }
+.bg-input { background-color: rgb(var(--input)); }
+.ring-custom { --tw-ring-color: rgb(var(--ring)); }
+.text-success { color: rgb(var(--success)); }
+.text-warning { color: rgb(var(--warning)); }
+.text-danger { color: rgb(var(--danger)); }
+.shadow-glow { box-shadow: 0 0 20px rgba(var(--glow), 0.3); }
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
